@@ -26,7 +26,7 @@ refs.searchForm.addEventListener('submit', e => {
       }
     });
     window.scrollTo({
-      top: document.documentElement.scrollHeight - 100,
-      behavior: 'smooth',
-    });
+    top: document.documentElement.offsetHeight,
+    behavior: 'smooth',
+  });
   });
