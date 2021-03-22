@@ -1,0 +1,23 @@
+{{#each this}}
+<li class="box-image">
+    <img src="{{webformatURL}}" alt="{{tags}} height=" 250px" data-source=" {{largeImageURL}}"">
+    <div class=" stats">
+    <p class="stats-item">
+        <i class="material-icons">thumb_up</i>
+    <p class="stats-numbers">{{likes}}</p>
+    </p>
+    <p class="stats-item">
+        <i class="material-icons">visibility</i>
+    <p class="stats-numbers">{{views}}</p>
+    </p>
+    <p class="stats-item">
+        <i class="material-icons">comment</i>
+    <p class="stats-numbers">{{comments}}</p>
+    </p>
+    <p class="stats-item">
+        <i class="material-icons">cloud_download</i>
+    <p class="stats-numbers">{{downloads}}</p>
+    </p>
+    </div>
+</li>
+{{/each}}
