@@ -6,19 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>goit-js-hw-13-image-finder</title>
     <body>
-    
-
     <form class="search-form" id="search-form">
-      <input type="text" name="query" autocomplete="off" placeholder="Search images..." />
+      <input class="search-form input" type="text" name="query" autocomplete="off" placeholder="Search images..." />
+      <button type="submit" class="button js-btn">Search</button>
     </form>
-<ul class="gallery">
-  <!-- Список <li> с карточками изображений -->
-</ul>
-
-  <button type="button" class="load-button is-hidden" data-action="load-more">
-    Load more
-  </button>
-      
-    </article>
+    <ul class="gallery">
+      <!-- Список <li> с карточками изображений -->
+    
+    </ul>
+    <span class="spinner"></span>
+    <p class="load-text">Sorry. No pages to load &nbsp;&#128521</p>
+    
+    
+    <!-- Modal window -->
+    
+    <div class="lightbox js-lightbox">
+      <div class="lightbox-overlay"></div>
+    
+      <!-- <div class="lightbox-content">
+        <img class="lightbox-image" src="./img/10840747.jpg" alt="" />
+    
+      </div> -->
+    
+      <button type="button" class="lightbox-button" data-action="close-lightbox">
+    
+      </button>
+    </div>
+    
+    <div class="end-page"></div>
   </body>
 </html>
